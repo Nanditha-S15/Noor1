@@ -80,7 +80,6 @@
       <div class="logo">AS</div>
       <div>
         <h1>Instructors-only: Project Site (Hidden)</h1>
-        <p class="lead">Only your instructor should view this page. Do not link publicly. (Obscure URL + server auth recommended)</p>
       </div>
     </header>
 
@@ -193,25 +192,11 @@
         </div>
       </section>
 
-
-
-      
+    
 
       <section class="card">
-        <h2 style="color:var(--accent);margin-top:0">Deployment & Access Notes</h2>
-        <p class="muted">Recommended steps before sharing with your instructor:</p>
-        <ol>
-          <li>Place file at an obscure URL, e.g. <code>/instructors-only-9f7b3a.html</code> (do not link from public pages).</li>
-          <li>Add server-side authentication. Example (Apache .htaccess):</li>
-        </ol>
-        <pre style="background:#f7f7f7;padding:10px;border-radius:8px;overflow:auto"># Apache (.htaccess)
-AuthType Basic
-AuthName "Instructors Only"
-AuthUserFile /path/to/.htpasswd
-Require valid-user
-</pre>
-        <p class="muted">Or for nginx: protect the location block with <code>auth_basic</code> and a generated password file.</p>
-        <p class="muted">If you cannot configure server auth, at minimum ensure the page has <code>&lt;meta name="robots" content="noindex,nofollow"&gt;</code> and keep the URL unlinked.</p>
+        <h2 style="color:var(--accent);margin-top:0">Sitemap</h2>
+        
       </section>
 
       <!-- WBD Checklist (visible only after unlock) -->
